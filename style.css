@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image : linear-gradient(120deg, #af91e7, #faa993);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+}
+
+form button{
+    color: #f7b7a6;
+    cursor: pointer;
+    transition: all 0.3 s ease;
+}
+form button:hover{
+    background-image : linear-gradient(120deg, #c0a7ee, #f7b7a6);
+    /* background-color: #af91e7; */
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    
+}
+.todo{
+    margin: 0.5rem;
+    /* padding: 0.5rem; */
+    background: white;
+    color: black;
+    font-size: 1rem;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center; 
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn{
+    border: none;
+    cursor: pointer;
+    background-color: #e8886d;
+    color: white;
+    padding: 1rem;
+}
+
+.complete-btn{
+    background-color: rgb(110, 181, 110);
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #f7b7a6;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.6rem;
+}
+
+.select::after{
+    content: "\25BD";
+    position: absolute;
+    background-color: #f7b7a6;
+    top: 0;
+    right: 0;
+    padding: 0.3rem;
+    pointer-events: none;
+    transition: all 1s ease;
+}
+
+.select:hover::after{
+    background-image : linear-gradient(120deg, #c0a7ee, #f7b7a6);
+}
+
+
+
+
+/* ul button:hover{
+    background-image : linear-gradient(120deg, #c0a7ee, #f7b7a6);
+   
+    color: white;
+} */
